@@ -10,7 +10,7 @@ body {
 
 /* header */
 .navbar {
-    background-color: #111;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 1;
