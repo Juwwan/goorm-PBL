@@ -12,7 +12,7 @@ button {
 }
 
 body {
-	background-color: rgb(255, 207, 207);
+	background-color: lightcoral;
 	color: #fff;
 }
 
@@ -54,7 +54,7 @@ main {
 	justify-content: space-between;
 	padding: 1.5rem;
 	border-radius: 1rem;
-	background-color: rgb(173, 230, 216);
+	background-color: lightblue;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 	margin-bottom: 1.5rem;
 }
