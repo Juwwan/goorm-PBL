@@ -1,15 +1,15 @@
-
 const list = document.getElementById("list");
 const createBtn = document.getElementById("create-btn");
 
 let todos = [];
 
-createBtn.addEventListener('click', createNewTodo);
  // addEventListener  => 어떠한 이벤트가 발생했을 때 함수를 등록.
-function createNewTodo() {
+createBtn.addEventListener('click', createNewTodo);
+
 	// 새로운 아이템 객체 생성
+function createNewTodo() {
 	const item = {
-		id: new Date().getTime(), //1690604133472
+		id: new Date().getTime(), 
 		text: "",
 		complete: false
 	}
