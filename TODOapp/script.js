@@ -130,5 +130,4 @@ function loadFromLocalStorage() {
 	if (data) {
 		todos = JSON.parse(data);
 	}
-}
-
+}   
