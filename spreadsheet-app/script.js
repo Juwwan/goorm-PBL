@@ -1,1 +1,2 @@
-console.log('안녕하세요!');
+const spreadSheetContainer = document.querySelector("#spreadsheet-container");
+const ROWS = 10;
