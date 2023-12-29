@@ -20,3 +20,8 @@
     box-sizing: border-box;
 
 }
+
+.cell.header {
+    text-align: center;
+    background-color: #ddd;
+}

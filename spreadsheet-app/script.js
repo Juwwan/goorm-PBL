@@ -24,21 +24,24 @@ function initSpreadsheet() {
         let spreadsheetRow = [];
         for(let j=0; j < COLS; j++) {
             let cellData = '';
+            let isHeader = false;
 
             // 모든 row 첫 번째 컬럼에 숫자 넣기
             if(j === 0) {
                 cellData = i;
+                isHeader = true;
             }
             
             if(i === 0) {
                 cellData = alphabets[j-1];
+                isHeader = true;
             }
             // 첫 번째 row의 컬럼은 "";
             if (!cellData) {
                 cellData = "";
             }
 
-            const cell = new Cell(false, false, cellData, i, j, false);
+            const cell = new Cell(isHeader, false, cellData, i, j, false);
             spreadsheetRow.push(cell);
         } 
         spreadsheet.push(spreadsheetRow);
@@ -54,6 +57,11 @@ function createCellEl(cell) {
     cellEl.id = 'cell_' + cell.row + cell.column;
     cellEl.value = cell.data;
     cellEl.disabled = cell.disabled;
+
+    if(cell.isHeader) {
+        cellEl.classList.add("header");
+    }
+
     return cellEl;
 }
 
