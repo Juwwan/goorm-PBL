@@ -1,4 +1,4 @@
-# Todo app
+# ☑️ Todo app
 
 Todo app을 구현하는 프로젝트입니다.
 
