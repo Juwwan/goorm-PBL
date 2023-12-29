@@ -1,4 +1,4 @@
-# github finder
+# 🔍 github finder
 
 github finder 앱을 구현하는 프로젝트입니다.
 
